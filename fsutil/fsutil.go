@@ -5,6 +5,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"os"
+	"path/filepath"
 
 	"github.com/mitchellh/go-homedir"
 )
@@ -93,4 +94,18 @@ func ReaderMimeType(r io.Reader) (mime string) {
 	}
 
 	return http.DetectContentType(buf[:n])
+}
+
+// RealWorkerFilePath 获取真实工作路径
+func RealWorkerFilePath() string {
+	executable, err := os.Executable()
+	if err != nil {
+		return ""
+	}
+	exPath := filepath.Dir(executable)
+	dir, err := filepath.EvalSymlinks(exPath)
+	if err != nil {
+		return ""
+	}
+	return dir
 }
