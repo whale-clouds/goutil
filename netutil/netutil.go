@@ -55,3 +55,11 @@ func HttpQueryStringFromValues(v url.Values, isSort bool) string {
 	}
 	return buf.String()
 }
+
+func HttpQueryToValues(s string) (url.Values, error) {
+	parse, err := url.Parse(s)
+	if err != nil {
+		return nil, err
+	}
+	return parse.Query(), nil
+}
