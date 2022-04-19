@@ -20,6 +20,7 @@ Go一些常用的工具函数收集、实现和整理
 - `strutil` string 相关操作的函数工具包. eg: bytes, check, convert, encode, format and more
 - `sysutil` system 相关操作的函数工具包. eg: sysenv, exec, user, process
 - `testutil` test help 相关操作的函数工具包. eg: http test, mock ENV value
+- `netutil` net 相关操作的函数工具包 eg：ip
 
 > **[EN README](README.md)**
 
@@ -131,7 +132,6 @@ PRINT AT github.com/gookit/goutil/cliutil_test.TestParseLine(line_parser_test.go
 Build line: ./myapp -a val0 -m "this is message" arg0
 ```
 
-
 ### Dump
 
 > Package `github.com/gookit/goutil/dump`
@@ -140,14 +140,14 @@ Build line: ./myapp -a val0 -m "this is message" arg0
 // source at dump/dump.go
 func Std() *Dumper
 func Reset()
-func Config(fn func(opts *Options))
+func Config(fn func (opts *Options))
 func Print(vs ...interface{})
 func Println(vs ...interface{})
 func Fprint(w io.Writer, vs ...interface{})
 func Format(vs ...interface{}) string
 // source at dump/dumper.go
 func NewDumper(out io.Writer, skip int) *Dumper
-func NewWithOptions(fn func(opts *Options)) *Dumper
+func NewWithOptions(fn func (opts *Options)) *Dumper
 func NewDefaultOptions(out io.Writer, skip int) *Options
 ```
 
@@ -193,7 +193,6 @@ Preview:
 > source code at `dump/dumper_test.TestStruct_WithNested`
 
 ![](dump/_examples/preview-nested-struct.png)
-
 
 ### ENV
 
@@ -267,6 +266,9 @@ func RegexFilterFunc(pattern string, include bool) FileFilterFunc
 func DotDirFilterFunc(include bool) DirFilterFunc
 func DirNameFilterFunc(names []string, include bool) DirFilterFunc
 // source at fsutil/fsutil.go
+
+// 获取真实工作路径
+func RealWorkerFilePath() string
 func OSTempFile(pattern string) (*os.File, error)
 func TempFile(dir, pattern string) (*os.File, error)
 func OSTempDir(pattern string) (string, error)
@@ -329,7 +331,6 @@ func main() {
 		})
 }
 ```
-
 
 ### JSON
 
@@ -402,7 +403,7 @@ func MustString(v interface{}) string
 func TryString(v interface{}) (string, error)
 // source at stdutil/go_chan.go
 func WaitCloseSignals(closer io.Closer) error
-func Go(f func() error) error
+func Go(f func () error) error
 // source at stdutil/stacks.go
 func GetCallStacks(all bool) []byte
 func GetCallersInfo(skip, max int) (callers []string)
@@ -420,7 +421,7 @@ func PkgName(funcName string) string
 
 ```go
 // source at structs/alias.go
-func NewAliases(checker func(alias string)) *Aliases
+func NewAliases(checker func (alias string)) *Aliases
 // source at structs/data.go
 func NewMapData() *MapDataStore
 // source at structs/structs.go
@@ -603,10 +604,22 @@ func RewriteStdout()
 func RestoreStdout() (s string)
 func RewriteStderr()
 func RestoreStderr() (s string)
-func MockEnvValue(key, val string, fn func(nv string))
-func MockEnvValues(kvMap map[string]string, fn func())
-func MockOsEnvByText(envText string, fn func())
-func MockOsEnv(mp map[string]string, fn func())
+func MockEnvValue(key, val string, fn func (nv string))
+func MockEnvValues(kvMap map[string]string, fn func ())
+func MockOsEnvByText(envText string, fn func ())
+func MockOsEnv(mp map[string]string, fn func ())
+```
+
+### Net
+
+> Package `github.com/gookit/goutil/netutil`
+
+```go
+// source at netutil/netutil.go
+// 请求查询参数转为字符串
+func HttpQueryStringFromValues(v url.Values, isSort bool) string
+// 请求查询参数转为url.Values
+func HttpQueryToValues(s string) (url.Values, error)
 ```
 
 ## Code Check & Testing
@@ -619,18 +632,23 @@ go test ./...
 
 ## Gookit packages
 
-  - [gookit/ini](https://github.com/gookit/ini) Go config management, use INI files
-  - [gookit/rux](https://github.com/gookit/rux) Simple and fast request router for golang HTTP
-  - [gookit/gcli](https://github.com/gookit/gcli) Build CLI application, tool library, running CLI commands
-  - [gookit/slog](https://github.com/gookit/slog) Lightweight, easy to extend, configurable logging library written in Go
-  - [gookit/color](https://github.com/gookit/color) A command-line color library with true color support, universal API methods and Windows support
-  - [gookit/event](https://github.com/gookit/event) Lightweight event manager and dispatcher implements by Go
-  - [gookit/cache](https://github.com/gookit/cache) Generic cache use and cache manager for golang. support File, Memory, Redis, Memcached.
-  - [gookit/config](https://github.com/gookit/config) Go config management. support JSON, YAML, TOML, INI, HCL, ENV and Flags
-  - [gookit/filter](https://github.com/gookit/filter) Provide filtering, sanitizing, and conversion of golang data
-  - [gookit/validate](https://github.com/gookit/validate) Use for data validation and filtering. support Map, Struct, Form data
-  - [gookit/goutil](https://github.com/gookit/goutil) Some utils for the Go: string, array/slice, map, format, cli, env, filesystem, test and more
-  - More, please see https://github.com/gookit
+- [gookit/ini](https://github.com/gookit/ini) Go config management, use INI files
+- [gookit/rux](https://github.com/gookit/rux) Simple and fast request router for golang HTTP
+- [gookit/gcli](https://github.com/gookit/gcli) Build CLI application, tool library, running CLI commands
+- [gookit/slog](https://github.com/gookit/slog) Lightweight, easy to extend, configurable logging library written in Go
+- [gookit/color](https://github.com/gookit/color) A command-line color library with true color support, universal API
+  methods and Windows support
+- [gookit/event](https://github.com/gookit/event) Lightweight event manager and dispatcher implements by Go
+- [gookit/cache](https://github.com/gookit/cache) Generic cache use and cache manager for golang. support File, Memory,
+  Redis, Memcached.
+- [gookit/config](https://github.com/gookit/config) Go config management. support JSON, YAML, TOML, INI, HCL, ENV and
+  Flags
+- [gookit/filter](https://github.com/gookit/filter) Provide filtering, sanitizing, and conversion of golang data
+- [gookit/validate](https://github.com/gookit/validate) Use for data validation and filtering. support Map, Struct, Form
+  data
+- [gookit/goutil](https://github.com/gookit/goutil) Some utils for the Go: string, array/slice, map, format, cli, env,
+  filesystem, test and more
+- More, please see https://github.com/gookit
 
 ## License
 
