@@ -5,9 +5,9 @@ import (
 	"os"
 	"testing"
 
-	"github.com/gookit/goutil/envutil"
-	"github.com/gookit/goutil/testutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/envutil"
+	"github.com/whale-clouds/goutil/testutil"
 )
 
 func TestOS(t *testing.T) {

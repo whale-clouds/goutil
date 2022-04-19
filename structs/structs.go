@@ -1,6 +1,6 @@
 package structs
 
-import "github.com/gookit/goutil/internal/comfunc"
+import "github.com/whale-clouds/goutil/internal/comfunc"
 
 // ToMap simple convert structs to map by reflect
 func ToMap(st interface{}) map[string]interface{} {

@@ -5,8 +5,8 @@ import (
 	"net/url"
 	"testing"
 
-	"github.com/gookit/goutil/netutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/netutil"
 )
 
 func TestInternalIP(t *testing.T) {

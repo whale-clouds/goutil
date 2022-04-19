@@ -10,7 +10,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gookit/goutil/fsutil"
+	"github.com/whale-clouds/goutil/fsutil"
 )
 
 func main() {

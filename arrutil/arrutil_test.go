@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gookit/goutil/arrutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/arrutil"
 )
 
 func TestReverse(t *testing.T) {

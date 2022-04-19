@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"testing"
 
-	"github.com/gookit/goutil/netutil/httpreq"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/netutil/httpreq"
 )
 
 func TestBuildBasicAuth(t *testing.T) {

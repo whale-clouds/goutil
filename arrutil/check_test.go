@@ -3,8 +3,8 @@ package arrutil_test
 import (
 	"testing"
 
-	"github.com/gookit/goutil/arrutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/arrutil"
 )
 
 func TestIntsHas(t *testing.T) {

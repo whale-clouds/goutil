@@ -3,9 +3,9 @@ package stdutil_test
 import (
 	"testing"
 
-	"github.com/gookit/goutil/stdutil"
-	"github.com/gookit/goutil/strutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/stdutil"
+	"github.com/whale-clouds/goutil/strutil"
 )
 
 func TestMustString(t *testing.T) {

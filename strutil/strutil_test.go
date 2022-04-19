@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"testing"
 
-	"github.com/gookit/goutil/strutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/strutil"
 )
 
 func TestTrim(t *testing.T) {

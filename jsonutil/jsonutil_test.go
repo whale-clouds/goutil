@@ -3,8 +3,8 @@ package jsonutil_test
 import (
 	"testing"
 
-	"github.com/gookit/goutil/jsonutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/jsonutil"
 )
 
 func TestPretty(t *testing.T) {

@@ -5,8 +5,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gookit/goutil/fsutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/fsutil"
 )
 
 func TestMimeType(t *testing.T) {

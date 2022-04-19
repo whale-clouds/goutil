@@ -3,9 +3,9 @@ package sysutil_test
 import (
 	"testing"
 
-	"github.com/gookit/goutil/dump"
-	"github.com/gookit/goutil/sysutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/dump"
+	"github.com/whale-clouds/goutil/sysutil"
 )
 
 func TestUserDir(t *testing.T) {

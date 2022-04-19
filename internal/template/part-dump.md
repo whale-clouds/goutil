@@ -6,7 +6,7 @@ example code:
 ```go
 package main
 
-import "github.com/gookit/goutil/dump"
+import "github.com/whale-clouds/goutil/dump"
 
 // rum demo:
 // 	go run ./dump/_examples/demo1.go

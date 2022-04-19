@@ -6,7 +6,7 @@ package sysutil
 import (
 	"syscall"
 
-	"github.com/gookit/goutil/strutil"
+	"github.com/whale-clouds/goutil/strutil"
 )
 
 // ChangeUserByName change work user by new username.

@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gookit/goutil/cliutil"
-	"github.com/gookit/goutil/dump"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/cliutil"
+	"github.com/whale-clouds/goutil/dump"
 )
 
 func TestCurrentShell(t *testing.T) {

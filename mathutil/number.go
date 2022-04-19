@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/gookit/goutil/fmtutil"
+	"github.com/whale-clouds/goutil/fmtutil"
 )
 
 // IsNumeric returns true if the given character is a numeric, otherwise false.

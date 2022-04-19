@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/gookit/color"
-	"github.com/gookit/goutil/dump"
+	"github.com/whale-clouds/goutil/dump"
 )
 
 // rum demo:

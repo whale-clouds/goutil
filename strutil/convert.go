@@ -10,7 +10,7 @@ import (
 	"time"
 	"unsafe"
 
-	"github.com/gookit/goutil/mathutil"
+	"github.com/whale-clouds/goutil/mathutil"
 )
 
 var (

@@ -5,8 +5,8 @@ import (
 	"os"
 	"path"
 
-	"github.com/gookit/goutil/cliutil/cmdline"
-	"github.com/gookit/goutil/sysutil"
+	"github.com/whale-clouds/goutil/cliutil/cmdline"
+	"github.com/whale-clouds/goutil/sysutil"
 )
 
 // LineBuild build command line string by given args.

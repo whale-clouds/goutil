@@ -4,9 +4,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/gookit/goutil/cliutil/cmdline"
-	"github.com/gookit/goutil/dump"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/cliutil/cmdline"
+	"github.com/whale-clouds/goutil/dump"
 )
 
 func TestLineParser_Parse(t *testing.T) {

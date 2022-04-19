@@ -1,10 +1,10 @@
 # Go Util
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gookit/goutil?style=flat-square)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/gookit/goutil)](https://github.com/gookit/goutil)
-[![GoDoc](https://godoc.org/github.com/gookit/goutil?status.svg)](https://pkg.go.dev/github.com/gookit/goutil)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gookit/goutil)](https://goreportcard.com/report/github.com/gookit/goutil)
-[![Unit-Tests](https://github.com/gookit/goutil/workflows/Unit-Tests/badge.svg)](https://github.com/gookit/goutil/actions)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/gookit/goutil)](https://github.com/whale-clouds/goutil)
+[![GoDoc](https://godoc.org/github.com/whale-clouds/goutil?status.svg)](https://pkg.go.dev/github.com/whale-clouds/goutil)
+[![Go Report Card](https://goreportcard.com/badge/github.com/whale-clouds/goutil)](https://goreportcard.com/report/github.com/whale-clouds/goutil)
+[![Unit-Tests](https://github.com/whale-clouds/goutil/workflows/Unit-Tests/badge.svg)](https://github.com/whale-clouds/goutil/actions)
 [![Coverage Status](https://coveralls.io/repos/github/gookit/goutil/badge.svg?branch=master)](https://coveralls.io/github/gookit/goutil?branch=master)
 
 💪 Useful utils for the Go: string, array/slice, map, format, CLI, ENV, filesystem, testing and more.
@@ -27,7 +27,7 @@
 
 ## GoDoc
 
-- [Godoc for github](https://pkg.go.dev/github.com/gookit/goutil)
+- [Godoc for github](https://pkg.go.dev/github.com/whale-clouds/goutil)
 
 ## Packages
 {{pgkFuncs}}
@@ -51,7 +51,7 @@ go test ./...
   - [gookit/config](https://github.com/gookit/config) Go config management. support JSON, YAML, TOML, INI, HCL, ENV and Flags
   - [gookit/filter](https://github.com/gookit/filter) Provide filtering, sanitizing, and conversion of golang data
   - [gookit/validate](https://github.com/gookit/validate) Use for data validation and filtering. support Map, Struct, Form data
-  - [gookit/goutil](https://github.com/gookit/goutil) Some utils for the Go: string, array/slice, map, format, cli, env, filesystem, test and more
+  - [gookit/goutil](https://github.com/whale-clouds/goutil) Some utils for the Go: string, array/slice, map, format, cli, env, filesystem, test and more
   - More, please see https://github.com/gookit
 
 ## License

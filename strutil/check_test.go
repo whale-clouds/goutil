@@ -3,8 +3,8 @@ package strutil_test
 import (
 	"testing"
 
-	"github.com/gookit/goutil/strutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/strutil"
 )
 
 func TestIsAlphabet(t *testing.T) {

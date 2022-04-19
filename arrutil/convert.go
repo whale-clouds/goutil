@@ -6,8 +6,8 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gookit/goutil/mathutil"
-	"github.com/gookit/goutil/strutil"
+	"github.com/whale-clouds/goutil/mathutil"
+	"github.com/whale-clouds/goutil/strutil"
 )
 
 // ErrInvalidType error

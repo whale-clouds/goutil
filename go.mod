@@ -1,4 +1,4 @@
-module github.com/gookit/goutil
+module github.com/whale-clouds/goutil
 
 go 1.14
 

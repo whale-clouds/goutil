@@ -3,7 +3,7 @@ package main
 import (
 	"time"
 
-	"github.com/gookit/goutil/dump"
+	"github.com/whale-clouds/goutil/dump"
 )
 
 // rum demo:

@@ -1,6 +1,6 @@
 package stdutil
 
-import "github.com/gookit/goutil/strutil"
+import "github.com/whale-clouds/goutil/strutil"
 
 // ToString always convert value to string
 func ToString(v interface{}) string {

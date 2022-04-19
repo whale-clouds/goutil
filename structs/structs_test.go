@@ -3,9 +3,9 @@ package structs_test
 import (
 	"testing"
 
-	"github.com/gookit/goutil/dump"
-	"github.com/gookit/goutil/structs"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/dump"
+	"github.com/whale-clouds/goutil/structs"
 )
 
 func TestTryToMap(t *testing.T) {

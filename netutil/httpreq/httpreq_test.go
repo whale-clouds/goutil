@@ -3,11 +3,11 @@ package httpreq_test
 import (
 	"testing"
 
-	"github.com/gookit/goutil/dump"
-	"github.com/gookit/goutil/jsonutil"
-	"github.com/gookit/goutil/netutil/httpctype"
-	"github.com/gookit/goutil/netutil/httpreq"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/dump"
+	"github.com/whale-clouds/goutil/jsonutil"
+	"github.com/whale-clouds/goutil/netutil/httpctype"
+	"github.com/whale-clouds/goutil/netutil/httpreq"
 )
 
 func TestHttpReq_Send(t *testing.T) {

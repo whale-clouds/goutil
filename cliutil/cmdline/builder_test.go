@@ -3,8 +3,8 @@ package cmdline_test
 import (
 	"testing"
 
-	"github.com/gookit/goutil/cliutil/cmdline"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/cliutil/cmdline"
 )
 
 func TestLineBuild(t *testing.T) {

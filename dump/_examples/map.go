@@ -1,6 +1,6 @@
 package main
 
-import "github.com/gookit/goutil/dump"
+import "github.com/whale-clouds/goutil/dump"
 
 // rum demo:
 // 	go run ./map.go

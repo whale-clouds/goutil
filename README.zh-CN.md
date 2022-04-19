@@ -1,10 +1,10 @@
 # Go Util
 
 ![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/gookit/goutil?style=flat-square)
-[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/gookit/goutil)](https://github.com/gookit/goutil)
-[![GoDoc](https://godoc.org/github.com/gookit/goutil?status.svg)](https://pkg.go.dev/github.com/gookit/goutil)
-[![Go Report Card](https://goreportcard.com/badge/github.com/gookit/goutil)](https://goreportcard.com/report/github.com/gookit/goutil)
-[![Unit-Tests](https://github.com/gookit/goutil/workflows/Unit-Tests/badge.svg)](https://github.com/gookit/goutil/actions)
+[![GitHub tag (latest SemVer)](https://img.shields.io/github/tag/gookit/goutil)](https://github.com/whale-clouds/goutil)
+[![GoDoc](https://godoc.org/github.com/whale-clouds/goutil?status.svg)](https://pkg.go.dev/github.com/whale-clouds/goutil)
+[![Go Report Card](https://goreportcard.com/badge/github.com/whale-clouds/goutil)](https://goreportcard.com/report/github.com/whale-clouds/goutil)
+[![Unit-Tests](https://github.com/whale-clouds/goutil/workflows/Unit-Tests/badge.svg)](https://github.com/whale-clouds/goutil/actions)
 [![Coverage Status](https://coveralls.io/repos/github/gookit/goutil/badge.svg?branch=master)](https://coveralls.io/github/gookit/goutil?branch=master)
 
 Go一些常用的工具函数收集、实现和整理
@@ -26,13 +26,13 @@ Go一些常用的工具函数收集、实现和整理
 
 ## GoDoc
 
-- [Godoc for github](https://pkg.go.dev/github.com/gookit/goutil)
+- [Godoc for github](https://pkg.go.dev/github.com/whale-clouds/goutil)
 
 ## Util Packages
 
 ### Array/Slice
 
-> Package `github.com/gookit/goutil/arrutil`
+> Package `github.com/whale-clouds/goutil/arrutil`
 
 ```go
 // source at arrutil/arrutil.go
@@ -64,7 +64,7 @@ func StringsToInts(ss []string) (ints []int, err error)
 
 ### CLI
 
-> Package `github.com/gookit/goutil/cliutil`
+> Package `github.com/whale-clouds/goutil/cliutil`
 
 ```go
 // source at cliutil/cliutil.go
@@ -100,8 +100,8 @@ package main
 import (
 	"fmt"
 
-	"github.com/gookit/goutil/cliutil"
-	"github.com/gookit/goutil/dump"
+	"github.com/whale-clouds/goutil/cliutil"
+	"github.com/whale-clouds/goutil/dump"
 )
 
 func main() {
@@ -120,7 +120,7 @@ func main() {
 output:
 
 ```text
-PRINT AT github.com/gookit/goutil/cliutil_test.TestParseLine(line_parser_test.go:30)
+PRINT AT github.com/whale-clouds/goutil/cliutil_test.TestParseLine(line_parser_test.go:30)
 []string [ #len=5
   string("./app"), #len=5
   string("top"), #len=3
@@ -134,7 +134,7 @@ Build line: ./myapp -a val0 -m "this is message" arg0
 
 ### Dump
 
-> Package `github.com/gookit/goutil/dump`
+> Package `github.com/whale-clouds/goutil/dump`
 
 ```go
 // source at dump/dump.go
@@ -158,7 +158,7 @@ example code:
 ```go
 package main
 
-import "github.com/gookit/goutil/dump"
+import "github.com/whale-clouds/goutil/dump"
 
 // rum demo:
 // 	go run ./dump/_examples/demo1.go
@@ -196,7 +196,7 @@ Preview:
 
 ### ENV
 
-> Package `github.com/gookit/goutil/envutil`
+> Package `github.com/whale-clouds/goutil/envutil`
 
 ```go
 // source at envutil/envutil.go
@@ -224,7 +224,7 @@ func IsSupportTrueColor() bool
 
 ### Formatting
 
-> Package `github.com/gookit/goutil/fmtutil`
+> Package `github.com/whale-clouds/goutil/fmtutil`
 
 ```go
 // source at fmtutil/format.go
@@ -238,7 +238,7 @@ func HowLongAgo(sec int64) string
 
 ### FileSystem
 
-> Package `github.com/gookit/goutil/fsutil`
+> Package `github.com/whale-clouds/goutil/fsutil`
 
 ```go
 // source at fsutil/check.go
@@ -307,7 +307,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/gookit/goutil/fsutil"
+	"github.com/whale-clouds/goutil/fsutil"
 )
 
 func main() {
@@ -334,7 +334,7 @@ func main() {
 
 ### JSON
 
-> Package `github.com/gookit/goutil/jsonutil`
+> Package `github.com/whale-clouds/goutil/jsonutil`
 
 ```go
 // source at jsonutil/jsonutil.go
@@ -349,7 +349,7 @@ func StripComments(src string) string
 
 ### Map
 
-> Package `github.com/gookit/goutil/maputil`
+> Package `github.com/whale-clouds/goutil/maputil`
 
 ```go
 // source at maputil/convert.go
@@ -365,7 +365,7 @@ func Values(mp interface{}) (values []interface{})
 
 ### Math/Number
 
-> Package `github.com/gookit/goutil/mathutil`
+> Package `github.com/whale-clouds/goutil/mathutil`
 
 ```go
 // source at mathutil/convert.go
@@ -394,7 +394,7 @@ func RandomInt(min, max int) int
 
 ### Std
 
-> Package `github.com/gookit/goutil/stdutil`
+> Package `github.com/whale-clouds/goutil/stdutil`
 
 ```go
 // source at stdutil/convert.go
@@ -417,7 +417,7 @@ func PkgName(funcName string) string
 
 ### Struct
 
-> Package `github.com/gookit/goutil/structs`
+> Package `github.com/whale-clouds/goutil/structs`
 
 ```go
 // source at structs/alias.go
@@ -437,7 +437,7 @@ func ParseTagValueINI(field, str string) (mp maputil.SMap, err error)
 
 ### String
 
-> Package `github.com/gookit/goutil/strutil`
+> Package `github.com/whale-clouds/goutil/strutil`
 
 ```go
 // source at strutil/bytes.go
@@ -544,7 +544,7 @@ func RenderText(input string, data interface{}, fns template.FuncMap, isFile ...
 
 ### System
 
-> Package `github.com/gookit/goutil/sysutil`
+> Package `github.com/whale-clouds/goutil/sysutil`
 
 ```go
 // source at sysutil/exec.go
@@ -591,7 +591,7 @@ func ChangeUserUidGid(newUid int, newGid int) (err error)
 
 ### Testing
 
-> Package `github.com/gookit/goutil/testutil`
+> Package `github.com/whale-clouds/goutil/testutil`
 
 ```go
 // source at testutil/httpmock.go
@@ -612,7 +612,7 @@ func MockOsEnv(mp map[string]string, fn func ())
 
 ### Net
 
-> Package `github.com/gookit/goutil/netutil`
+> Package `github.com/whale-clouds/goutil/netutil`
 
 ```go
 // source at netutil/netutil.go
@@ -646,7 +646,7 @@ go test ./...
 - [gookit/filter](https://github.com/gookit/filter) Provide filtering, sanitizing, and conversion of golang data
 - [gookit/validate](https://github.com/gookit/validate) Use for data validation and filtering. support Map, Struct, Form
   data
-- [gookit/goutil](https://github.com/gookit/goutil) Some utils for the Go: string, array/slice, map, format, cli, env,
+- [gookit/goutil](https://github.com/whale-clouds/goutil) Some utils for the Go: string, array/slice, map, format, cli, env,
   filesystem, test and more
 - More, please see https://github.com/gookit
 

@@ -6,8 +6,8 @@ import (
 	"reflect"
 	"strings"
 
-	"github.com/gookit/goutil/maputil"
-	"github.com/gookit/goutil/strutil"
+	"github.com/whale-clouds/goutil/maputil"
+	"github.com/whale-clouds/goutil/strutil"
 )
 
 var errNotAnStruct = errors.New("must input an struct")

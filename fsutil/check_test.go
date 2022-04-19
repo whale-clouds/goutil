@@ -4,8 +4,8 @@ import (
 	"runtime"
 	"testing"
 
-	"github.com/gookit/goutil/fsutil"
 	"github.com/stretchr/testify/assert"
+	"github.com/whale-clouds/goutil/fsutil"
 )
 
 func TestCommon(t *testing.T) {

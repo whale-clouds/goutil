@@ -7,7 +7,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/gookit/goutil/netutil/httpctype"
+	"github.com/whale-clouds/goutil/netutil/httpctype"
 )
 
 // HttpReq an simple http requester.

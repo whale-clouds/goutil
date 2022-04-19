@@ -7,7 +7,7 @@ import (
 	"runtime"
 	"strings"
 
-	"github.com/gookit/goutil/stdutil"
+	"github.com/whale-clouds/goutil/stdutil"
 )
 
 // PanicIfErr if error is not empty
